@@ -1,0 +1,152 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="io.ggface.tastelesspizza.ui.product.ProductFragment"
+    tools:showIn="@layout/activity_product">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:transitionName="@string/transition_pizza_main_image"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/pizza_example"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/product_name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/primary_text"
+                android:textSize="24sp"
+                tools:text="@string/dev_pizza_name"/>
+
+            <TextView
+                android:id="@+id/product_description_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/view_padding"
+                android:paddingRight="@dimen/view_padding"
+                android:paddingTop="@dimen/view_padding"
+                android:textColor="@color/primary_text"
+                tools:text="@string/dev_pizza_description"/>
+
+            <TextView
+                style="@style/TextStyle.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/view_padding"
+                android:text="@string/choose_crust"/>
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"
+                android:paddingEnd="@dimen/view_padding"
+                android:paddingStart="@dimen/view_padding"
+                android:paddingTop="16dp">
+
+                <Button
+                    android:id="@+id/crust_traditional_button"
+                    style="@style/BaseButton.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_split_button_left"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/crust_traditional"/>
+
+                <Button
+                    android:id="@+id/rust_thin_button"
+                    style="@style/BaseButton.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_split_button_right"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/crust_thin"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextStyle.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_size"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sizes_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:layout_height="200dp"
+                tools:listitem="@layout/list_item_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/view_padding"
+                android:layout_marginTop="@dimen/view_padding"
+                android:background="@color/dark_bg_alpha"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/view_padding">
+
+                <TextView
+                    style="@style/TextStyle.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/view_padding"
+                    android:text="@string/product_summary"
+                    tools:ignore="RtlSymmetry"/>
+
+                <TextView
+                    android:id="@+id/summary_text_view"
+                    style="@style/TextStyle.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:maxLines="1"
+                    android:paddingEnd="@dimen/view_padding"
+                    tools:ignore="RtlSymmetry"
+                    tools:text="$34.12"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginBottom="@dimen/view_padding"
+                android:layout_marginEnd="@dimen/view_padding"
+                android:layout_marginStart="@dimen/view_padding"
+                android:text="@string/add_to_order"
+                android:theme="@style/BaseButton.Active"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

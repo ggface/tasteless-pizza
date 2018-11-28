@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/item_offer_photo_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transition_pizza_main_image"
+        tools:background="#00BCD4"
+        tools:ignore="ContentDescription"/>
+
+    <TextView
+        android:id="@+id/item_offer_description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"
+        android:background="@color/light_bg_alpha"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="3"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        tools:text="Buy a Large Pizza &amp; Get 1 Pasta, 1 Portion Garlic Bread, 1 Salad ,1 Brownie &amp; 1 glass of beverage FREE at US Pizza."/>
+
+    <TextView
+        android:id="@+id/item_offer_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        tools:text="20% Discount on purchase"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_action_order"
+        android:icon="@drawable/background_toolbar_order_icon"
+        android:title="@string/action_order"
+        app:showAsAction="always"/>
+</menu>

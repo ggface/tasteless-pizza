@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Tasteless Pizza</string>
+    <string name="title_main_menu">Menu</string>
+    <string name="title_main_offers">Offers</string>
+    <string name="title_main_profile">Profile</string>
+
+    <string name="transition_pizza_main_image">transition_pizza_main_image</string>
+
+    <string name="action_order">Order</string>
+    <string name="crust_traditional">Traditional</string>
+    <string name="crust_thin">Thin</string>
+    <string name="choose_size">Choose size</string>
+    <string name="add_to_order">Add to order</string>
+    <string name="choose_crust">Choose crust</string>
+    <string name="dev_pizza_description">The pizza that started it all! It\'s loaded with our Italian sausage, fresh garlic, onion extra mozzarella on red sauce.</string>
+    <string name="dev_pizza_name">Fire Breathing Dragon Pizza</string>
+    <string name="product_summary">SUMMARY:</string>
+
+    <string name="create_account_terms">I agree with <a href="https://developer.android.com/studio/terms.html">Politics of personal data</a> processing by clicking \"Create an account\"</string>
+    <string name="create_account_already_have_an_account">I already have an account</string>
+    <string name="create_account_your_name">Your name</string>
+    <string name="create_account_phone">Phone</string>
+    <string name="create_account_phone_mask" tools:ignore="Typos">+1 XXX XXX XXXX</string>
+    <string name="create_account_email">E-mail</string>
+    <string name="create_account_password">Password</string>
+    <string name="create_account_password_rules">The password must be at least 6 characters, contain at least one letter and one number.</string>
+    <string name="create_account_create_an_account">Create an account</string>
+
+    <string name="sign_in_terms">I agree with <a href="https://developer.android.com/studio/terms.html">Politics of personal data</a> processing by clicking \"Log in\"</string>
+
+    <!-- Strings related to login -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="restore_password_phone">Phone</string>
+    <string name="restore_password_phone_hint">Example of correct phone number +1 XXX XXX XXXX</string>
+    <string name="restore_password_restore">Restore</string>
+
+    <!--region Login-->
+    <string name="login_phone">Phone</string>
+    <string name="login_password">Password</string>
+    <string name="login_log_in">Log in</string>
+    <string name="login_forgot_your_password">Forgot your password?</string>
+    <!--endregion Login-->
+</resources>

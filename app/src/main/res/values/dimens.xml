@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="view_padding">8dp</dimen>
+    <dimen name="text_counter_size">11sp</dimen>
+</resources>

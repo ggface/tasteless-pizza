@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:paddingEnd="@dimen/view_padding"
+    android:paddingStart="@dimen/view_padding">
+
+    <RadioButton
+        android:id="@+id/item_size_marker_radio_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/item_size_name_text_view"
+        style="@style/TextStyle.Title"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/item_size_weight_text_view"
+        android:layout_toStartOf="@id/item_size_price_text_view"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/view_padding"
+        android:paddingStart="@dimen/view_padding"
+        android:textAllCaps="false"
+        tools:text="Medium"/>
+
+    <TextView
+        android:id="@+id/item_size_price_text_view"
+        style="@style/TextStyle.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/view_padding"
+        tools:ignore="RtlSymmetry"
+        tools:text="$13.22"/>
+
+    <TextView
+        android:id="@+id/item_size_weight_text_view"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/bg_text_weight_circle"
+        android:gravity="center"
+        android:textColor="@color/primary_text"
+        tools:text="950g"/>
+</RelativeLayout>

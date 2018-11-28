@@ -1,0 +1,133 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.ggface.tastelesspizza.ui.profile.CreateAccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/view_padding">
+
+        <Button
+            android:id="@+id/switch_to_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:text="@string/create_account_already_have_an_account"
+            android:theme="@style/BaseButton.Default"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/view_padding"
+            android:layout_marginTop="@dimen/view_padding"
+            android:background="@color/dark_bg_alpha"/>
+
+        <TextView
+            style="@style/TextStyle.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/name_edit_text"
+            android:paddingTop="@dimen/view_padding"
+            android:text="@string/create_account_your_name"/>
+
+        <io.ggface.tastelesspizza.ui.widget.ValidEditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding"
+            android:layout_marginStart="@dimen/view_padding"
+            android:inputType="textCapWords|textNoSuggestions"/>
+
+        <TextView
+            style="@style/TextStyle.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/phone_edit_text"
+            android:paddingTop="@dimen/view_padding"
+            android:text="@string/create_account_phone"/>
+
+        <io.ggface.tastelesspizza.ui.widget.ValidEditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding"
+            android:layout_marginStart="@dimen/view_padding"
+            android:digits="0123456789+"
+            android:hint="@string/create_account_phone_mask"
+            android:inputType="phone"/>
+
+        <TextView
+            style="@style/TextStyle.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/email_edit_text"
+            android:paddingTop="@dimen/view_padding"
+            android:text="@string/create_account_email"/>
+
+        <io.ggface.tastelesspizza.ui.widget.ValidEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding"
+            android:layout_marginStart="@dimen/view_padding"
+            android:inputType="textEmailAddress"/>
+
+
+        <TextView
+            style="@style/TextStyle.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/password_edit_text"
+            android:paddingTop="@dimen/view_padding"
+            android:text="@string/create_account_password"/>
+
+        <io.ggface.tastelesspizza.ui.widget.ValidEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding"
+            android:layout_marginStart="@dimen/view_padding"
+            android:inputType="textPassword"/>
+
+        <TextView
+            style="@style/TextStyle.Inverse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding"
+            android:layout_marginStart="@dimen/view_padding"
+            android:paddingBottom="@dimen/view_padding"
+            android:text="@string/create_account_password_rules"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/view_padding"
+            android:layout_marginTop="@dimen/view_padding"
+            android:background="@color/dark_bg_alpha"/>
+
+        <CheckBox
+            android:id="@+id/terms_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/view_padding"
+            android:layout_marginStart="@dimen/view_padding"
+            android:layout_marginTop="@dimen/view_padding"
+            android:text="@string/create_account_terms"/>
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/view_padding"
+            android:text="@string/create_account_create_an_account"
+            android:theme="@style/BaseButton.Active"/>
+    </LinearLayout>
+</ScrollView>
